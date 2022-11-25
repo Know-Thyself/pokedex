@@ -1,14 +1,18 @@
 .app-wrapper {
 	width: fit-content;
-	margin: auto;
+  height: 100%;
+	margin: 0 auto;
 	text-align: center;
-	padding-bottom: 2rem;
+	padding: 1rem;
+  background-color: rgb(236, 229, 221);
 }
 
 .abilities,
-.pokemon-names {
-  width: min-content;
+.pokemon-names,
+.pokemon-moves {
+  /* width: max-content; */
   margin: 1rem auto;
+  text-align: left;
 }
 
 .moves-selector {

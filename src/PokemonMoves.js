@@ -12,7 +12,7 @@ function PokemonMoves({ pokemonId }) {
 		return (
 			<>
 				<p>{pokemonData.name}'s moves:</p>
-				<ul>
+				<ul className='pokemon-moves'>
 					{pokemonData.moves.map((move, index) => {
 						return <li key={index}>{move.move.name}</li>;
 					})}

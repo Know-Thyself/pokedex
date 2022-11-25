@@ -5,9 +5,10 @@
 	padding-bottom: 2rem;
 }
 
-.abilities {
+.abilities,
+.pokemon-names {
   width: min-content;
-  margin: auto;
+  margin: 1rem auto;
 }
 
 .moves-selector {

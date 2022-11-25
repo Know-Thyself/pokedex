@@ -23,11 +23,12 @@ const CaughtPokemon = () => {
 			</p>
 			<input
 				type='text'
+				placeholder='Pokemon name'
 				value={pokemonNameInput}
 				onChange={handleInputChange}
 			/>
 			<button onClick={catchPokemon} >Catch Pokemon</button>
-			<ul>
+			<ul className='pokemon-names'>
 				{caught.map((pokemon, index) => (
 					<li key={index}>{pokemon}</li>
 				))}

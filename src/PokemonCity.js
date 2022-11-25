@@ -10,7 +10,7 @@ function PokemonCity() {
 			<input
 				type='text'
 				value={city}
-				placeholder='enter a city name'
+				placeholder='City name'
 				onChange={updateCity}
 			/>
 			<p>Welcome to the city of {city}</p>

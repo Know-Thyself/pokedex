@@ -10,7 +10,6 @@
 .abilities,
 .pokemon-names,
 .pokemon-moves {
-  /* width: max-content; */
   margin: 1rem auto;
   text-align: left;
 }

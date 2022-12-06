@@ -16,6 +16,9 @@ const App = () => {
 		<div className='app-wrapper'>
 			<BrowserRouter>
 				<div className='links'>
+					<Link to='/' className='link'>
+						Home
+					</Link>
 					<Link to='/best-pokemon' className='link'>
 						Best Pokemon
 					</Link>
@@ -23,8 +26,8 @@ const App = () => {
 						Caught Pokemon
 					</Link>
 					<Link
-						to={pokemonData ? '/pokemon/' + pokemonData.name : ''}
-						className='link active'
+						to={pokemonData ? `/pokemon/${pokemonData.name}` : ''}
+						className='link'
 					>
 						Pokemon Info
 					</Link>

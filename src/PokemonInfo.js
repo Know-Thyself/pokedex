@@ -21,6 +21,8 @@ const PokemonInfo = ({ id }) => {
 					<li>Name: {pokemonSpecies.name}</li>
 					<li>Color: {pokemonSpecies.color.name}</li>
 					<li>Shape: {pokemonSpecies.shape.name}</li>
+					<li>Happiness: {pokemonSpecies.base_happiness}</li>
+					<li>Capture Rate: {pokemonSpecies.capture_rate}</li>
 				</ul>
 			)}
 		</div>

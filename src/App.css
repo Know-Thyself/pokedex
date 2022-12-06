@@ -18,3 +18,13 @@
 .moves-selector {
   margin-bottom: 1rem;
 }
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.link {
+  text-decoration: none;
+}

@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
 import PokemonMoves from './PokemonMoves';
 
-function PokemonMovesSelector() {
-	const [id, setId] = useState(null);
-
+function PokemonMovesSelector({ id, setId, pokemonData, setPokemonData }) {
 	function handleBulbasaurClick() {
 		setId(1);
 	}
@@ -15,7 +12,7 @@ function PokemonMovesSelector() {
 		<div className='moves-selector'>
 			<button onClick={handleBulbasaurClick}>Fetch Bulbasaur</button>
 			<button onClick={handleCharmanderClick}>Fetch Charmander</button>
-			{id ? <PokemonMoves pokemonId={id} /> : null}
+			{id ? <PokemonMoves pokemonId={id} pokemonData={pokemonData} setPokemonData={setPokemonData} /> : null}
 		</div>
 	);
 }

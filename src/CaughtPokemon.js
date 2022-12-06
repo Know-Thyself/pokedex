@@ -27,7 +27,7 @@ const CaughtPokemon = () => {
 				value={pokemonNameInput}
 				onChange={handleInputChange}
 			/>
-			<button onClick={catchPokemon} >Catch Pokemon</button>
+			<button onClick={catchPokemon}>Catch Pokemon</button>
 			<ul className='pokemon-names'>
 				{caught.map((pokemon, index) => (
 					<li key={index}>{pokemon}</li>

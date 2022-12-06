@@ -23,7 +23,7 @@ const App = () => {
 						Caught Pokemon
 					</Link>
 					<Link
-						to={pokemonData ? '/pokemon/' + pokemonData.name : '/pokemon/:name'}
+						to={pokemonData ? '/pokemon/' + pokemonData.name : ''}
 						className='link active'
 					>
 						Pokemon Info

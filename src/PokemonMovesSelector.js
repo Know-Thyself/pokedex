@@ -12,7 +12,13 @@ function PokemonMovesSelector({ id, setId, pokemonData, setPokemonData }) {
 		<div className='moves-selector'>
 			<button onClick={handleBulbasaurClick}>Fetch Bulbasaur</button>
 			<button onClick={handleCharmanderClick}>Fetch Charmander</button>
-			{id ? <PokemonMoves pokemonId={id} pokemonData={pokemonData} setPokemonData={setPokemonData} /> : null}
+			{id ? (
+				<PokemonMoves
+					pokemonId={id}
+					pokemonData={pokemonData}
+					setPokemonData={setPokemonData}
+				/>
+			) : null}
 		</div>
 	);
 }

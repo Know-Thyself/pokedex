@@ -5,7 +5,6 @@ function PokemonMoves({ pokemonId, pokemonData, setPokemonData }) {
 		fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}/`)
 			.then((res) => res.json())
 			.then((data) => {
-				console.log(data)
 				setPokemonData(data);
 			})
 			.catch((err) => console.error(err));

@@ -12,6 +12,7 @@ const App = () => {
 	const abilities = ['Anticipation', 'Adaptability', 'Run-Away'];
 	const [id, setId] = useState(null);
 	const [pokemonData, setPokemonData] = useState(null);
+
 	return (
 		<div className='app-wrapper'>
 			<BrowserRouter>

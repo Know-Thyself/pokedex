@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 const PokemonInfo = ({ id }) => {
 	const { name } = useParams();
 	const [pokemonSpecies, setPokemonSpecies] = useState(null);
+
 	useEffect(() => {
 		fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}`)
 			.then((res) => res.json())
@@ -14,11 +15,11 @@ const PokemonInfo = ({ id }) => {
 	}, [id]);
 
 	return (
-		<div>
+		<div name='use-params'>
 			<h1>Pokemon Info</h1>
 			{pokemonSpecies && (
 				<ul style={{ textAlign: 'left' }}>
-					<li>Name: {pokemonSpecies.name}</li>
+					<li>Name: {name}</li>
 					<li>Color: {pokemonSpecies.color.name}</li>
 					<li>Shape: {pokemonSpecies.shape.name}</li>
 					<li>Happiness: {pokemonSpecies.base_happiness}</li>
